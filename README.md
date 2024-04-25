@@ -50,7 +50,7 @@ Extra
 
 <br><br>
 <div align="center">
-    <img src="./src/assets/img/Portfolio2024" width="200" height="100" hspace="25">
+    <img src="./src/assets/img/Portfolio2024.png" width="200" height="100" hspace="25">
 </div>
 <br><br>
 <div align="center">
@@ -63,7 +63,7 @@ Extra
 
 <div align="center">
     <img src="https://img.shields.io/badge/IN%C3%8DCIO-12%2F04%2F2024-green" hspace="5"/>
-    <img src="https://img.shields.io/badge/T%C3%89RMINO-25%F04%2F2024-red" hspace="5"/>
+    <img src="https://img.shields.io/badge/T%C3%89RMINO-25%2F04%2F2024-red" hspace="5"/>
 </div>
 <br>
 <hr>
