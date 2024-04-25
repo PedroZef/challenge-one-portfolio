@@ -50,7 +50,7 @@ Extra
 
 <br><br>
 <div align="center">
-    <img src="./src/assets/img/Portfolio2024.png" width="200" height="100" hspace="25">
+    <img src="./assets/img/Portfolio2024.png" width="200" height="100" hspace="25">
 </div>
 <br><br>
 <div align="center">
