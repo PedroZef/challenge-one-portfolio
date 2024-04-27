@@ -11,7 +11,7 @@ section.hobbies {
   align-items: center;
   flex-direction: column;
   max-width: calc(75rem);
-  padding: 2em 0;
+
 }
 
 .skills__line,

@@ -10,14 +10,14 @@ section.experience {
   align-items: center;
   max-width: calc(75rem);
   width: 100%;
-  padding: 5em 0;
+
 }
 
 .experience__projects {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
 
   gap: 1em;
 }
@@ -67,6 +67,7 @@ section.experience {
 
 }
 
+
 .experience__button--repo {
   background-color: transparent;
   border: 1px solid var(--button-color);
@@ -90,20 +91,43 @@ section.experience {
   .experience__box {
     flex-direction: column;
     gap: 0.7em;
-    align-items: baseline;
+    align-items:center;
   }
 
   .experience__img {
-    width: 100%;
+    text-align: center;
+    width: 90%;
   }
   .experience__box {
+    text-align: center;
     flex-direction: column !important;
+  }
+
+  .experience__button, .experience__button--demo, .experience__button--repo {
+ 
+    text-align: center;
   }
 }
 /*Mobile*/
 @media (max-width: 425px) {
   .experience__container {
     max-width: calc(22em);
-    padding: 1em 0;
+    padding: .5em 0;
   }
+
+  .experience__img {
+    margin: .5em auto;
+    display: block;
+    width: 60%;
+  }
+
+  .experience__box {
+    text-align: center;
+    
+  }
+
+ .experience__description {
+    
+    text-align: center;
+}
 }

@@ -1,6 +1,7 @@
 section.formcontato {
   display: flex;
   justify-content: center;
+  text-align: center;
   background-color: var(--branco);
 }
 
@@ -24,11 +25,14 @@ section.formcontato {
 }
 
 .formcontato__title {
-  margin: 0;
+  align-items: center;
+  margin: 20px;
 }
 
 .formcontato__subtext {
   margin-bottom: 1em;
+  align-items: center;
+  text-align: center;
 }
 
 .formcontato--esquerda {

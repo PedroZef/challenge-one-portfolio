@@ -19,14 +19,14 @@ section.menu {
 
 .menu__title {
   display: flex;
-  gap: 0.5em;
+  gap: .3em;
   align-items: center;
   font-weight: 700;
 }
 
 .menu__list {
   display: flex;
-  gap: 2em;
+  gap: 1.5em;
   font-weight: 500;
 }
 
@@ -41,15 +41,20 @@ section.menu {
 /* Tablets */
 @media (max-width: 768px) {
   section.menu {
-    max-width: calc(43em);
+    max-width: calc(33em);
+  }
+
+  .menu__title {
+    display: none;
   }
   .menu__list .menu__list__item:not(:last-child) {
-    display: none;
+    display: inline-block;
   }
 }
 /*Mobile*/
 @media (max-width: 425px) {
   section.menu {
-    max-width: calc(22em);
+    max-width: calc(32em);
   }
+
 }

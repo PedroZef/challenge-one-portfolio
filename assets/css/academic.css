@@ -9,7 +9,6 @@ section.academic {
   flex-direction: column;
   align-items: center;
   max-width: calc(75rem);
-  padding: 5em 0;
   width: 100%;
 }
 
