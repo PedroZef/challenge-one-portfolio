@@ -26,9 +26,8 @@ coloque nas sessões indicadas*/
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--azul20);
-    font-family: 'Raleway';
+    font-family: var(--raleway);
+    background-color: var(--azul10);
     margin: 0;
     padding: 0;
     line-height: 1;
