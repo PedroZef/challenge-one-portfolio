@@ -114,7 +114,7 @@ section.title {
 }
 
 /* Tablets */
-@media (max-width: 768px) {
+@media screen (mim-width: 768px) and @media screen (max-width: 1240px) {
   section.title {
     max-width: calc(43em);
 
@@ -173,7 +173,7 @@ section.title {
 }
 
 /*Mobile*/
-@media (max-width: 425px) {
+@media screen (max-width: 425px) {
   section.title {
     display: block;
     text-align: center;
@@ -234,4 +234,4 @@ section.title {
     text-align: center;
   }
 
-}/*
+}
