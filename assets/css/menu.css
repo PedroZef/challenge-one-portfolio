@@ -1,20 +1,20 @@
-section.menu {
+section.menu .section {
   background-color:  var(--cards-colors);
   display: flex;
   justify-content: center;
-  padding: 1em;
+  
 }
 
-.menu__container {
+.menu__container  {
   max-width: calc(75rem);
   width: 100%;
-  padding: 1em 0;
+  padding: .5em 0;
 }
 
 .menu__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .menu__title {
@@ -34,14 +34,14 @@ section.menu {
   font-weight: 700;
 }
 
-.menu__list__item {
+.menu__list__item  {
   gap: 1em;
 }
 
 /* Tablets */
 @media (max-width: 768px) {
-  section.menu {
-    max-width: calc(33em);
+  section.menu  {
+    max-width: calc(43em);
   }
 
   .menu__title {
@@ -53,8 +53,9 @@ section.menu {
 }
 /*Mobile*/
 @media (max-width: 425px) {
-  section.menu {
+  section.menu .section {
     max-width: calc(32em);
+    align-items: center;
   }
 
 }

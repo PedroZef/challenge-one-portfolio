@@ -47,7 +47,11 @@ li {
 
 a {
     text-decoration: none;
+}
 
+.all {
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 .secondary-title {
@@ -84,5 +88,5 @@ a {
 }
 
 .button--up:active {
-    transform: scale(0.9);
+    transform: scale(0.6);
 }
