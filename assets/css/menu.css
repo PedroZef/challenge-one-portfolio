@@ -15,6 +15,7 @@ section.menu .section {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  
 }
 
 .menu__title {
@@ -26,8 +27,12 @@ section.menu .section {
 
 .menu__list {
   display: flex;
-  gap: 1.5em;
+  gap: 1em;
   font-weight: 500;
+}
+
+.menu__list nav {
+  flex-wrap: wrap;
 }
 
 .menu__list li:last-child {
@@ -56,6 +61,11 @@ section.menu .section {
   section.menu .section {
     max-width: calc(32em);
     align-items: center;
+  }
+
+  .menu__header {
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
 }

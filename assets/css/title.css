@@ -6,7 +6,7 @@
 }
 
 /* Profile animation */
-.title__container .title__profile__container .tittle__profile {
+.title__profile__container .tittle__profile {
 
   text-align: center;
   overflow: hidden;
@@ -15,6 +15,8 @@
 }
 
 .tittle__profile {
+  width: 358px;
+  height: 358px;
   object-fit: cover;
   transform-style: preserve-3d;
   transition: transform 0.5s;
@@ -22,14 +24,14 @@
   border-radius: 60%;
 }
 
+
 .tittle__profile:hover {
   transform: rotateY(180deg);
 }
 
 
 .title__profile--back {
-  width: 90%;
-  height: 90%;
+
   backface-visibility: hidden;
   box-shadow: 0px 8px 8px 8px rgba(61, 59, 59, 0.1);
   border-radius: 60%;
@@ -37,7 +39,6 @@
   background-color: var(--branco);
   color: #000;
   text-align: center;
-  justify-content: center;
   overflow: hidden;
 }
 
@@ -128,6 +129,12 @@
     width: 90%;
   }
 
+   .title__profile--img img {
+    flex-direction: column-reverse;
+    margin-left: 60px;
+
+  }
+
   .title__div .title__bio .title__subsection {
     text-align: center;
     font-size: 42px;
@@ -135,7 +142,7 @@
     margin-bottom: 10px;
   }
 
-  .tittle__profile .title__profile--img .title__profile--front {
+  .title__profile--img .title__profile--front {
     align-items: center;
     text-align: center;
     height: 146px;
@@ -173,6 +180,7 @@
     display: block;
     text-align: center;
     max-width: calc(75rem);
+    flex-wrap: wrap;
     width: 90%;
   }
 
