@@ -1,18 +1,19 @@
-h2, h3, p {
-  animation-duration: 2s;
-  animation-name: slidein;
-}
-
 @keyframes slidein {
   from {
-    align-items: center;
     margin-left: 100%;
-    width: 300%
+    width: 300%;
   }
 
   to {
-    align-items: center;
-    margin-left: 50%;
+    margin-left: 0;
     width: 100%;
   }
+}
+
+h2,
+h3,
+p {
+  animation-duration: 2s;
+  animation-name: slidein;
+  align-items: center; /* if needed */
 }
