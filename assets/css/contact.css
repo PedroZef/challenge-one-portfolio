@@ -1,3 +1,4 @@
+/* Form Container */
 section.formcontato {
   display: flex;
   justify-content: center;
@@ -20,19 +21,14 @@ section.formcontato {
   width: 100%;
 }
 
-.formcontato__title secundary__title {
+.formcontato__title,
+.formcontato__subtext {
   text-align: center;
-}
-
-.formcontato__title {
   align-items: center;
-  margin: 20px;
 }
 
 .formcontato__subtext {
   margin-bottom: 1em;
-  align-items: center;
-  text-align: center;
 }
 
 .formcontato--esquerda {
@@ -50,12 +46,13 @@ section.formcontato {
   color: rgb(224, 94, 7);
   margin-top: 1em;
 }
+
 .formcontato__area {
   position: relative;
   padding-top: 13px;
 }
-/* Inputs */
 
+/* Inputs */
 .formcontato__input {
   font-family: var(--font-family);
   font-size: 16px;
@@ -105,7 +102,6 @@ section.formcontato {
 }
 
 /* TextArea */
-
 .formcontato__input--textarea {
   resize: none;
   word-break: break-word;
@@ -131,8 +127,7 @@ section.formcontato {
   color: var(--highlight-form);
 }
 
-/*Form Errors*/
-
+/* Form Errors */
 .formcontato__error {
   color: var(--error-message);
   font-size: 12px;
@@ -149,6 +144,7 @@ section.formcontato {
     padding-top: 4em;
     padding-bottom: 2em;
   }
+
   .formcontato--esquerda {
     display: none;
   }
@@ -158,21 +154,20 @@ section.formcontato {
   }
 }
 
-/*Mobile*/
+/* Mobile */
 @media (max-width: 425px) {
   .formcontato__container {
     max-width: calc(22em);
     padding-top: 1em;
   }
 
-    .formcontato__text  {
-      text-align: center;
+  .formcontato__text {
+    text-align: center;
+  }
 
-    }
-
-    .formcontato__text a {
-      padding: 1e,;
-    }
+  .formcontato__text a {
+    padding: 1rem;
+  }
 
   .formcontato__input {
     width: 96%;
