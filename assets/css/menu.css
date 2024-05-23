@@ -1,71 +1,88 @@
+/* Menu section styles */
 section.menu .section {
-  background-color:  var(--cards-colors);
+  background-color: var(--cards-colors);
   display: flex;
   justify-content: center;
-  
 }
 
-.menu__container  {
+/* Container for menu elements */
+.menu__container {
   max-width: calc(75rem);
   width: 100%;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
+/* Header section of the menu */
 .menu__header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
 }
 
+/* Title of the menu */
 .menu__title {
   display: flex;
-  gap: .3em;
+  gap: 0.3em;
   align-items: center;
   font-weight: 700;
 }
 
+/* List of menu items */
 .menu__list {
   display: flex;
   gap: 1em;
   font-weight: 500;
 }
 
+/* Navigation within the menu list */
 .menu__list nav {
   flex-wrap: wrap;
 }
 
+/* Last child in the menu list */
 .menu__list li:last-child {
   font-weight: 700;
 }
 
-.menu__list__item  {
+/* Individual menu list items */
+.menu__list__item {
   gap: 1em;
 }
 
-/* Tablets */
+/* Tablets media query (max-width: 768px) */
 @media (max-width: 768px) {
-  section.menu  {
+  section.menu {
     max-width: calc(43em);
   }
 
+  /* Hide menu title on tablets */
   .menu__title {
     display: none;
   }
+
+  /* Display individual menu list items inline on tablets */
   .menu__list .menu__list__item:not(:last-child) {
     display: inline-block;
   }
 }
-/*Mobile*/
+
+/* Mobile media query (max-width: 425px) */
 @media (max-width: 425px) {
   section.menu .section {
     max-width: calc(32em);
     align-items: center;
   }
 
+  /* Change header layout on mobile devices */
   .menu__header {
     flex-direction: column;
     flex-wrap: wrap;
   }
+}
 
+/* New media query for better responsiveness (max-width: 375px) */
+@media (max-width: 375px) {
+  .menu__list__item {
+    font-size: 0.9em;
+  }
 }
