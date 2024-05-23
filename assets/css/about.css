@@ -1,4 +1,4 @@
-section.about  {
+.about {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,61 +7,45 @@ section.about  {
 }
 
 .about__container {
-  max-width: calc(75rem);
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .about__title {
-  text-align: center;
   font-size: 32px;
-  margin: 1em;
-
+  margin: 1em auto;
 }
 
 .about__paragraph {
-  margin: 1em;
   text-align: justify;
   font-weight: 400;
   max-width: 65%;
+  margin: 1em auto;
 }
 
-.about__paragraph .about__paragraph img {
+.about__paragraph img {
   margin-top: 20px;
-
 }
 
-
-/* Tablets */
 @media (max-width: 868px) {
   .about__container {
-    flex-direction: column;
-    max-width: calc(43em);
-    text-align: center;
-    margin: 1em;
-  }
-
-  .about__title {
-    text-align: center;
+    max-width: 43em;
   }
 
   .about__paragraph {
     max-width: 100%;
   }
+}
 
-
-} 
-  /*Mobile*/
-  @media (max-width: 425px) {
-    section.about .sections {
-      padding: 1em 0;
-    }
-
-    .about__container {
-      max-width: calc(22em);
-    }
-
-    .about__title {
-      text-align: center;
-    }
-
-   
+@media (max-width: 425px) {
+  .about {
+    padding: 1em 0;
   }
+
+  .about__container {
+    max-width: 22em;
+  }
+}
+
+</css>
