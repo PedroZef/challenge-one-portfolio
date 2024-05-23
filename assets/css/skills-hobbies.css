@@ -1,27 +1,32 @@
+/* Sections */
 section.skills,
 section.hobbies {
   display: flex;
   justify-content: center;
-
+  padding: 4em 0px; /* Added padding for better spacing */
 }
 
+/* Containers */
 .skills__container,
 .hobbies__container {
   display: flex;
   align-items: center;
   flex-direction: column;
   max-width: calc(75rem);
-
 }
 
+/* Skills and Hobbies Lines */
 .skills__line,
 .hobbies__line {
   align-items: center;
   display: flex;
   gap: 2.1rem;
   flex-wrap: wrap;
+  justify-content: space-around; /* Added to improve layout */
+  max-width: calc(43em); /* Added for tablet view */
 }
 
+/* Skills and Hobbies Boxes */
 .skills__box,
 .hobbies__box {
   display: flex;
@@ -35,14 +40,15 @@ section.hobbies {
   transition: transform 0.3s ease;
   cursor: pointer;
 }
+
 .skills__box:hover,
 .hobbies__box:hover {
-
   border: 1px solid;
   color: var(--branco);
   transform: scale(1.1);
 }
 
+/* Skills and Hobbies Names */
 .skills__name,
 .hobbies__name {
   text-align: center;
@@ -50,6 +56,7 @@ section.hobbies {
   margin-top: 0.5em;
 }
 
+/* Skills and Hobbies Images */
 .skills__img,
 .hobbies__img {
   align-items: center;
@@ -57,31 +64,20 @@ section.hobbies {
   width: 55%;
 }
 
+/* Hobbies Extra Padding */
 .hobbies__container .hobbies--extrapadding {
   padding-bottom: 4em;
 }
 
 /* Tablets */
 @media (max-width: 868px) {
-  .skills__line,
-  .hobbies__line {
-    max-width: calc(43em);
-    text-align: center;
-    justify-content: space-around;
-  
-  }
-
   .skills__box,
   .hobbies__box {
-   flex-direction: column;
+    flex-direction: column;
     justify-content: space-between;
     height: 110px;
     width: 179px;
     align-items: center;
-  }
-
-  section.hobbies {
-    padding: 4em 0px;
   }
 }
 
@@ -90,15 +86,15 @@ section.hobbies {
   .skills__container,
   .hobbies__container {
     max-width: calc(22rem);
-    
   }
-
+  
   .skills__line,
   .hobbies__line {
     max-width: calc(22rem);
     gap: 1.7em;
     display: flex;
   }
+  
   .skills__box,
   .hobbies__box {
     height: 100px;
